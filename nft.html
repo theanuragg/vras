@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your NFT Collection</title>
+    <link rel="stylesheet" href="/nft.css">
+</head>
+<body>
+    <!-- Header section similar to OpenSea -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li>vras</li>
+            <li>create</li>
+            <li>discover<a href="https://youtu.be/dQw4w9WgXcQ?si=9-uya3iJ7M9YTp_m&t=42" target="_blank" class="a"></a></li>
+        </ul> 
+
+        <div class="search-bar">
+            <input type="text" placeholder="search">
+        </div>
+        <button id="connectWallet">Connect Wallet</button>
+        <p id="status"></p>
+
+        <!-- Pop-up Modal -->
+        <div id="walletModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Select Wallet to Connect</h2>
+                <button id="phantomConnect"><img src="https://avatars.githubusercontent.com/u/124594793?s=200&v=4"  class="wallet-icon"> Connect with Phantom</button>
+                <button id="backpackConnect"><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cd/b4/8d/cdb48d24-31e4-a468-ac9e-66fbc36903e1/AppIcon-0-0-1x_U007ephone-0-85-220.png/512x512bb.jpg"  class="wallet-icon"> Connect with Backpack</button>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/solana-web3.js/1.32.0/solana-web3.min.js"></script>
+        <script src="/wallet.js"></script>
+
+    </nav>
+    <script src="/script.js"> </script>
+    </header>
+
+    <!-- Banner and profile section -->
+    <!-- Banner and profile section -->
+    <div class="profile-container">
+        <div class="banner">
+            <img src="https://media.giphy.com/media/fxNRr2Uu0Uaq1wKtui/giphy.gif?cid=790b7611nqmckw3btmja4ds4byh66zpx5zlmdb7j1pu9yken&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Banner Image">
+            <div class="profile-image">
+                <img src="https://i.pinimg.com/564x/0b/80/51/0b8051e37168c1d6092de82ce8aa2ace.jpg" alt="Profile Image">
+            </div>
+
+        <div class="profile-details">
+            <h2></h2>
+            <p></p>
+            <a href="#" class="see-more">See more</a>
+            <div class="profile-stats"></div>
+        </div>
+    </div>
+
+    <!-- Tabs section -->
+    <div class="tabs">
+        <a href="#" class="tab active">About</a>
+        <a href="#" class="tab">Annoucment </a>
+        <a href="#" class="tab">sneak-peak</a>
+        <a href="#" class="tab">General</a>
+    </div>
+</body>
+</html>
