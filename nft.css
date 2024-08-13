@@ -184,18 +184,17 @@ body {
   padding: 60px 20px 20px 20px;
   text-align: left;
 }
-
 .profile-details h2 {
-  margin: 0;
+  margin: 0px;
   font-size: 24px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .profile-details p {
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
   margin: 10px 0;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .see-more {
@@ -298,4 +297,76 @@ button {
   height: 24px;
   margin-right: 8px; /* Space between image and text */
   vertical-align: middle;
+}
+/* scrol*/
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container, .scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-box {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  margin-right: 200px; /* Adjust as needed */
+  cursor: grab;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.image {
+  margin-right: 20px; /* Adjust as needed */
+  transition: transform 0.3s ease;
+}
+.image:hover {
+  animation: shake 0.5s ease;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-1px); }
+  50% { transform: translateX(1px); }
+  75% { transform: translateX(-1px); }
+  100% { transform: translateX(0); }
+}
+.content {
+  flex: 1;
+}
+
+.info {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.scroll-container {
+  flex-direction: row-reverse;
+  height: 200vh; /* Makes the container taller to enable scrolling */
+}
+
+
+.info {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.scroll-container {
+  flex-direction: row-reverse;
+  height: 200vh; /* Makes the container taller to enable scrolling */
 }
